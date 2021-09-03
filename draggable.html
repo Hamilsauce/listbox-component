@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>drag</title>
+	<style type="text/css" media="all">
+		.dropzone {
+			position: relative;
+			/* display: flex; */
+			/* flex-direction: column; */
+			gap: 5px;
+			width: 300px;
+			height: 400px;
+			background: blueviolet;
+			margin-bottom: 10px;
+			padding: 10px;
+		}
+
+		.draggable {
+			/* position: absolute; */
+			width: 200px;
+			height: 20px;
+			padding: 5px;
+			text-align: center;
+			background: white;
+			transition: 0.7s;
+		}
+
+
+		.dropzone2 {
+			width: 300px;
+			height: 400px;
+			background: #2BE24A;
+			margin-bottom: 10px;
+			padding: 10px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="dropzone">
+		<div class="draggable" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)">
+			This div is draggable1
+		</div>
+		<div class="draggable" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)">
+			This div is draggable2
+		</div>
+		<div class="draggable" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)">
+			This div is draggable3
+		</div>
+		<div class="draggable" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)">
+			This div is draggable4
+		</div>
+		<div class="draggable" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)">
+			This div is draggable5
+		</div>
+		<div class="draggable" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)">
+			This div is draggable6
+		</div>
+	</div>
+	<!-- <div class="dropzone"></div> -->
+	<div class="dropzone">
+		<div class="draggable" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)">
+			drag queen
+		</div>
+	</div>
+	<div class="dropzone"></div>
+	<div class="dropzone"></div>
+	<script src="draggable-absolute.js" type="text/javascript" charset="utf-8"></script>
+	<!-- <script src="drag-list.js" type="text/javascript" charset="utf-8"></script> -->
+	<!-- <script src="list-dragger.js" type="text/javascript" charset="utf-8"></script> -->
+</body>
+
+</html>
